@@ -1,0 +1,40 @@
+{
+  "name": "recipe-unit-converter-server",
+  "version": "1.0.0",
+  "description": "Backend service for the Recipe Unit Converter, handling ingredient measurement conversions and providing API endpoints. This microservice is designed to be part of a larger interconnected system, potentially interacting with other services like an AI-Powered Content Assistant for recipe generation or a Personal Blog Platform for sharing recipes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "recipe",
+    "unit-conversion",
+    "cooking",
+    "measurements",
+    "api",
+    "microservice",
+    "interconnected-system",
+    "food-tech"
+  ],
+  "author": "Your Name/Organization",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  }
+}
