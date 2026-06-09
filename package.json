@@ -1,0 +1,43 @@
+```json
+{
+  "name": "recipe-unit-converter",
+  "version": "1.0.0",
+  "description": "A web application for converting ingredient measurements between different units for cooking. This service is designed as part of a larger microservice ecosystem, potentially interacting with services like the AI-Powered Content Assistant for recipe generation or the Personal Blog Platform for sharing culinary creations.",
+  "main": "server/index.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "echo \"Installing dependencies for all workspaces...\" && npm install --workspaces",
+    "start:server": "echo \"Starting Node.js server...\" && npm run start --workspace=server",
+    "start:client": "echo \"Starting React client...\" && npm run start --workspace=client",
+    "dev": "echo \"Starting both client and server in development mode...\" && concurrently \"npm run start:server\" \"npm run start:client\"",
+    "build:client": "echo \"Building React client for production...\" && npm run build --workspace=client",
+    "build": "echo \"Building all production assets...\" && npm run build:client",
+    "test": "echo \"No root-level tests specified. Please run tests within client/ or server/ directories.\" && exit 0",
+    "lint": "echo \"No root-level linting specified. Please run linting within client/ or server/ directories.\" && exit 0",
+    "clean": "echo \"Cleaning up node_modules and build artifacts...\" && rm -rf node_modules client/node_modules server/node_modules client/build server/dist || true",
+    "postinstall": "echo \"Root dependencies installed. Remember to run 'npm install --workspaces' if you haven't already to install sub-project dependencies.\""
+  },
+  "keywords": [
+    "recipe",
+    "unit converter",
+    "cooking",
+    "measurements",
+    "react",
+    "nodejs",
+    "javascript",
+    "microservice",
+    "foodtech",
+    "ai-assistant-integration",
+    "blog-platform-integration"
+  ],
+  "author": "Your Name/Organization",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+```
